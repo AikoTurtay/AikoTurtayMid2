@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="../css/movie.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="search-and-categories">
+            <input type="text" id="movie-search" placeholder="Enter movie name..." />
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="genre-buttons" class="genre-buttons">
+            <button onclick="fetchPopularMovies()">All</button>
+            <button onclick="fetchMoviesByGenre(28)">Action</button>
+            <button onclick="fetchMoviesByGenre(35)">Comedy</button>
+            <button onclick="fetchMoviesByGenre(18)">Drama</button>
+            <button onclick="fetchMoviesByGenre(27)">Horror</button>
+            <button onclick="fetchMoviesByGenre(10749)">Romance</button>
+        </div>
+    </header>
+    <div id="movie-results" class="movie-results"></div>
+    <div id="popular-movies" class="movie-results">
+        <h2>Popular Movies</h2>
+        <div id="popular-movies-list"></div>
+    </div>
+</div>
+
+<script src="../js/index.js"></script>
+</body>
+</html>

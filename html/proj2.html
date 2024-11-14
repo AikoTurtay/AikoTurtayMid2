@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Pinterest</title>
+    <link rel="stylesheet" href="../css/proj2.css">
+</head>
+<body>
+
+<header>
+    <h1>Delicious Food Ideas</h1>
+    <input type="text" id="searchInput" placeholder="Search by recipe or ingredient..." onkeyup="filterRecipes()">
+
+
+    <div id="categories" class="category-buttons">
+        <button onclick="filterCategory('all')">All</button>
+        <button onclick="filterCategory('lemonades')">Lemonades</button>
+        <button onclick="filterCategory('soups')">Soups</button>
+        <button onclick="filterCategory('baked')">Baked Goods</button>
+    </div>
+</header>
+
+<section id="popular-dishes">
+    <h2>Popular Dishes</h2>
+    <div id="recipeGrid" class="grid"></div>
+</section>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

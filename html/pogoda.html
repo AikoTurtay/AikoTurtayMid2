@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone-Style Weather App</title>
+    <link rel="stylesheet" href="../css/pogoda.css">
+</head>
+<body>
+<div class="weather-app">
+    <header>
+        <h1>Weather</h1>
+        <input type="text" id="cityInput" placeholder="Search city..." onkeyup="searchCity()">
+        <div id="suggestions" class="suggestions"></div>
+        <button onclick="getLocation()">My Location</button>
+        <label class="unit-toggle">
+            <input type="checkbox" id="unitToggle" onchange="toggleUnits()">
+            <span>°C / °F</span>
+        </label>
+    </header>
+
+    <section id="current-weather" class="current-weather">
+        <h2 id="cityName">Cupertino</h2>
+        <p id="temperature">22°</p>
+        <p id="weatherCondition">Sunny</p>
+        <p id="highLow">H: 31° L: 16°</p>
+        <img id="weatherIcon" alt="Weather Icon">
+    </section>
+
+    <section id="forecast" class="forecast">
+        <h3>5-Day Forecast</h3>
+        <div id="forecastGrid" class="forecast-grid"></div>
+    </section>
+</div>
+
+<script src="../js/pogoda.js"></script>
+</body>
+</html>
